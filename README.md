@@ -1,2 +1,2 @@
-# ART_GALLERY1
+# ART_GALLERY
 Art Gallery SDP Project
