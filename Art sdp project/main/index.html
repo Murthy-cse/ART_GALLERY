@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Art Gallery</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* General Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Dark Mode Styling */
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    /* Main Title */
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    /* Dark Mode Button */
+    #toggleMode {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    #toggleMode:hover {
+      background-color: #0056b3;
+    }
+
+    /* Navigation Menu */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: #555;
+      color: #fff;
+    }
+
+    /* Menu Items */
+    .menu-items a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    /* Login and Signup Links */
+    .auth-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .auth-links a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 15px;
+      background-color: #007BFF;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .auth-links a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Content Section */
+    .content {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    /* Image Gallery */
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Art Gallery</h1>
+    <button id="toggleMode">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="menu-items">
+      <a href="#">Home</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="#">Artists</a>
+      <a href="about.html">About</a>
+      <a href="Exhibitions.html">Visitor</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+    
+    <div class="auth-links">
+      <a href="login.html">Login</a>
+      <a href="signup.html">Sign Up</a>
+      <a href="Admin.html">Admin</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <section class="content">
+    <h2>Welcome to the Art Gallery</h2>
+    <p>Explore a world of art and creativity. Our gallery showcases the finest works from renowned artists worldwide. Browse our collections, get to know our featured artists, and discover upcoming exhibitions.</p>
+
+    <!-- Image Gallery -->
+    <div class="gallery">
+      <img src="Art sdp project/image/img1.jpg" alt="Art Image 1">
+      <img src="Art sdp project/image/img2.jpg" alt="Art Image 2">
+      <img src="Art sdp project/image/img3.jpg" alt="Art Image 3">
+      <img src="Art sdp project/image/img4.jpg" alt="Art Image 4">
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Dark mode toggle functionality
+    const toggleButton = document.getElementById('toggleMode');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>

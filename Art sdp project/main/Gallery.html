@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    /* Existing styles */
+    nav {
+      background-color: #07001f;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    /* Gallery Title */
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    /* Gallery Grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="Art sdp project/image/img1.jpg" alt="Gallery Image 1">
+    <img src="Art sdp project/image/img2.jpg" alt="Gallery Image 2">
+    <img src="Art sdp project/image/img3.jpg" alt="Gallery Image 3">
+    <img src="Art sdp project/image/img4.jpg" alt="Gallery Image 4">
+    <img src="Art sdp project/image/img5.jpg" alt="Gallery Image 5">
+   <!-- <img src="Art sdp project/image6.jpg" alt="Gallery Image 6">
+    <img src="Art sdp project/image7.jpg" alt="Gallery Image 7">
+    <img src="Art sdp project/image8.jpg" alt="Gallery Image 8">-->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="your-script.js"></script>
+</body>
+</html>

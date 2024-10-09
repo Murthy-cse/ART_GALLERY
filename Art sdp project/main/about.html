@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Home - Art Gallery</title>
+  <style>
+    /* Body styling with background image */
+    body {
+      background-image: url('path/to/your/background-image.jpg'); /* Add your background image path here */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Prevent repetition of the image */
+      color: #fff; /* Text color */
+      font-family: Arial, sans-serif; /* Font style */
+    }
+
+    /* Navigation styling */
+    nav {
+      background-color: rgba(7, 0, 31, 0.8); /* Slightly transparent background for nav */
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    /* Main content styling */
+    .content {
+      width: 80%;
+      margin: 50px auto;
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for readability */
+      border-radius: 10px;
+      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      font-size: 3rem;
+      color: #07001f;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #007BFF;
+    }
+    /* Image styling */
+    .gallery-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="signup.html">Sign Up</a>
+    <a href="admin.html">Admin</a>
+  </nav>
+
+  <!-- Main content section -->
+  <section class="content">
+    <h1>Welcome to the Art Gallery</h1>
+    <img src="image/img2.jpg" alt="Art Gallery" class="gallery-image"> <!-- Add your image path here -->
+    <p>Discover an exclusive collection of art that celebrates creativity, diversity, and expression. Our gallery brings together a wide array of artwork from artists across the globe, showcasing various styles, mediums, and perspectives. Whether you are an art lover, a collector, or an artist yourself, you'll find something that resonates with you.</p>
+    <p>At the <span class="highlight">Art Gallery</span>, we believe that art has the power to inspire and transform. Explore our carefully curated exhibits and experience the magic of visual storytelling. We are committed to promoting emerging talent alongside established names, making art accessible to everyone.</p>
+    <p>Browse our <a href="gallery.html">gallery</a> to view the latest exhibitions, learn more about our featured <a href="contact.html">artists</a>, and stay connected with upcoming events. We look forward to sharing our passion for art with you!</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Art Gallery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
